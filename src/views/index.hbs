@@ -1,0 +1,115 @@
+<html lang='en'>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta
+      name='viewport'
+      content='width=device-width, initial-scale=1, shrink-to-fit=no'
+    />
+    <meta name='description' content='' />
+    <meta name='author' content='' />
+    <title>Musicly | Home</title>
+    <!-- Favicon-->
+    <link rel='icon' type='image/x-icon' href='assets/favicon.ico' />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href='css/styles.css' rel='stylesheet' />
+    <link rel='stylesheet' href='css\standard.css' />
+    <script
+      src='https://kit.fontawesome.com/e83c3c859f.js'
+      crossorigin='anonymous'
+    ></script>
+  </head>
+
+  <body>
+    <div class='d-flex' id='wrapper'>
+      <!-- Sidebar-->
+      <div class='border-end bg-black fixed' id='sidebar-wrapper'>
+        <div
+          class='sidebar-heading border-bottom bg-dark text-white logo'
+        >Musily</div>
+        <div class='list-group list-group-flush'>
+          <a
+            class='list-group-item list-group-item-action list-group-item-dark p-3 bg-black text-white'
+            href='/'
+          >HOME</a>
+          <a
+            class='list-group-item list-group-item-action list-group-item-dark p-3 bg-black text-white'
+            href='/albums'
+          >ADD SONG</a>
+          <a
+            class='list-group-item list-group-item-action list-group-item-dark p-3 bg-black text-white'
+            href='/play'
+          >PLAY SONG</a>
+          <a
+            class='list-group-item list-group-item-action list-group-item-dark p-3 bg-black text-white'
+            href='/aboutus'
+          >ABOUT US</a>
+          <a
+            class='list-group-item list-group-item-action list-group-item-dark p-3 bg-black text-white'
+            href='#!'
+          >TODO</a>
+          <a
+            class='list-group-item list-group-item-action list-group-item-dark p-3 bg-black text-white'
+            href='#!'
+          >TODO</a>
+        </div>
+      </div>
+      <!-- Page content wrapper-->
+      <div id='page-content-wrapper'>
+        <!-- Top navigation-->
+        <nav
+          class='navbar navbar-expand-lg navbar-light bg-light border-bottom'
+        >
+          <div class='container-fluid'>
+            <button class='btn btn-light border' id='sidebarToggle'><i
+                class='fa-solid fa-bars'
+              ></i></button>
+
+            <form class='d-flex' role='search'>
+              <input
+                class='form-control me-2'
+                type='search'
+                placeholder='Search'
+                aria-label='Search'
+              />
+              <button
+                class='btn btn-outline-success'
+                type='submit'
+              >Search</button>
+            </form>
+          </div>
+        </nav>
+
+        <!-- Page content-->
+
+        <div class='container-fluid'>
+          <div class='row row-cols-1 row-cols-md-3 g-4'>
+
+            {{#each this}}
+              <div class='col'>
+                <div class='card'>
+                  <img src='uploads\music.png' class='card-img-top' alt='...' />
+                  <div class='card-body'>
+                    <h3 class='card-title'>{{tittle}}</h3>
+                    <h6 class='card-text'>{{artist}}</h6>
+                    <h6 class='card-text'>{{album}}</h6>
+
+                  </div>
+                </div>
+              </div>
+
+            {{/each}}
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script
+      src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js'
+    ></script>
+    <!-- Core theme JS-->
+    <script src='js/scripts.js'></script>
+  </body>
+
+</html>

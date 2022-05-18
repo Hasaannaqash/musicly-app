@@ -1,0 +1,49 @@
+.logo {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+}
+
+body {
+    /* background: linear-gradient(180deg, #800080 0%, rgba(255, 255, 255, 0) 100%), #000000; */
+    height: 100vh;
+}
+
+.about {
+    text-align: center;
+    font-family: Pacifico;
+    color: black;
+    font-size: 15px;
+}
+
+.team {
+    font-family: Roboto;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-img-top {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.h1-heading {
+    color: white;
+}
+
+.sideCard {
+    float: right;
+    width: 40%;
+    margin: 4%;
+}
+
+.leftSide {
+    float: left;
+    width: 40%;
+    margin: 4%;
+    font-size: 20px;
+    font-family: Roboto;
+}

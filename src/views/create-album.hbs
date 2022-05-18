@@ -1,0 +1,144 @@
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <meta
+      name='viewport'
+      content='width=device-width, initial-scale=1, shrink-to-fit=no'
+    />
+    <meta name='description' content='' />
+    <meta name='author' content='' />
+    <title>Musicly | Add Album</title>
+    <!-- Favicon-->
+    <link rel='icon' type='image/x-icon' href='assets/favicon.ico' />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href='css/styles.css' rel='stylesheet' />
+    <link rel='stylesheet' href='css\standard.css' />
+    <script
+      src='https://kit.fontawesome.com/e83c3c859f.js'
+      crossorigin='anonymous'
+    ></script>
+  </head>
+  <body>
+    <div class='d-flex' id='wrapper'>
+      <!-- Sidebar-->
+      <div class='border-end bg-black' id='sidebar-wrapper'>
+        <div
+          class='sidebar-heading border-bottom bg-dark text-white logo'
+        >Musily</div>
+        <div class='list-group list-group-flush'>
+          <a
+            class='list-group-item list-group-item-action list-group-item-dark p-3 bg-black text-white'
+            href='/'
+          >HOME</a>
+          <a
+            class='list-group-item list-group-item-action list-group-item-dark p-3 bg-black text-white'
+            href='/albums'
+          >ADD SONG</a>
+          <a
+            class='list-group-item list-group-item-action list-group-item-dark p-3 bg-black text-white'
+            href='/play'
+          >PLAY SONG</a>
+          <a
+            class='list-group-item list-group-item-action list-group-item-dark p-3 bg-black text-white'
+            href='/aboutus'
+          >ABOUT US</a>
+          <a
+            class='list-group-item list-group-item-action list-group-item-dark p-3 bg-black text-white'
+            href='#!'
+          >TODO</a>
+          <a
+            class='list-group-item list-group-item-action list-group-item-dark p-3 bg-black text-white'
+            href='#!'
+          >TODO</a>
+        </div>
+      </div>
+      <!-- Page content wrapper-->
+      <div id='page-content-wrapper'>
+        <!-- Top navigation-->
+        <nav
+          class='navbar navbar-expand-lg navbar-light bg-light border-bottom'
+        >
+          <div class='container-fluid'>
+            <button class='btn btn-light border' id='sidebarToggle'><i
+                class='fa-solid fa-bars'
+              ></i></button>
+
+            <form class='d-flex' role='search'>
+              <input
+                class='form-control me-2'
+                type='search'
+                placeholder='Search'
+                aria-label='Search'
+              />
+              <button
+                class='btn btn-outline-success'
+                type='submit'
+              >Search</button>
+            </form>
+          </div>
+        </nav>
+        <!-- Page content-->
+        <div class='container-fluid bg-co'>
+          <div style='margin:0 20% 0 20%'>
+            <form method='post' action='/create'>
+              <div class='mb-3'>
+                <label class='form-label'>Tittle: </label>
+                <input
+                  name='tittle'
+                  type='text'
+                  class='form-control'
+                  aria-describedby='emailHelp'
+                />
+              </div>
+
+              <div class='mb-3'>
+                <label class='form-label'>Album: </label>
+                <input name='album' type='text' class='form-control' />
+              </div>
+
+              <div class='mb-3'>
+                <label class='form-label'>Artist: </label>
+                <input name='artist' type='text' class='form-control' />
+              </div>
+
+              <div class='mb-3'>
+                <label class='form-label'>Lyrics: </label>
+
+                <div class='mb-3'>
+                  <textarea
+                    name='lyrics'
+                    class='form-control'
+                    rows='4'
+                    cols='132'
+                  ></textarea>
+                </div>
+
+              </div>
+
+              <div class='mb-3'>
+                <label class='form-label'>Picture :
+                </label>
+                <input name='picture' type='file' class='form-control' />
+              </div>
+              <div class='mb-3'>
+                <label class='form-label'>Music: </label>
+                <input name='music' type='file' class='form-control' />
+              </div>
+              <div style='text-align: center'>
+                <button type='submit' class='btn btn-success'>Submit</button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script
+      src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js'
+    ></script>
+    <!-- Core theme JS-->
+    <script src='js/scripts.js'></script>
+  </body>
+
+</html>
